@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Vaccination News</title>
+    <style>
+        /* Style for the slideshow container */
+        .slideshow-container {
+            
+            position: relative;
+            margin-bottom: 100%;
+            width: 100%;
+            height: 50%;
+        }
+
+        /* Style for individual slides */
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        /* Style for slide images */
+        .slide-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style for slide headlines */
+        .slide-text {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Style for slide navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides">
+           <a href="https://news.ibx.com/independence-blue-cross-reports-increase-in-children-who-receive-all-recommended-vaccines/"> <img src="news_1.png" alt="News 1" class="slide-img"></a>
+            <div class="slide-text">Child Vaccination News Headline 1</div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides">
+            <a href="https://www.cdc.gov/mmwr/volumes/72/wr/mm7202a3.htm"><img src="news_2.jpg" alt="News 2" class="slide-img"></a>
+            <div class="slide-text">Child Vaccination News Headline 2</div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides">
+           <a href="https://www.isglobal.org/en/-/isglobal-nuevo-colaborador-estrategico-de-la-alianza-empresarial-para-la-vacunacion-infantil"> <img src="news_3.jpg" alt="News 3" class="slide-img"></a>
+            <div class="slide-text">Child Vaccination News Headline 3</div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="mySlides">
+            <a href="https://www.facebook.com/airnewsalerts/photos/a.262571017217636/1267981816676546/?type=3"><img src="news_4.jpeg" alt="News 4" class="slide-img"></a>
+            <div class="slide-text">Child Vaccination News Headline 4</div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="mySlides">
+            <a href="https://www.youtube.com/watch?v=xn0RJxp1VhU"><img src="news_5.jpg" alt="News 5" class="slide-img"></a>
+            <div class="slide-text">Child Vaccination News Headline 5</div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        // Automatic slideshow (remove if not needed)
+        let slideTimer = setInterval(() => {
+            plusSlides(1);
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>

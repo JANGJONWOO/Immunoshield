@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  grey;
+        }
+        .container {
+            width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 25px 20px black;
+        }
+        h1 {
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(to right, grey,black);
+            color: #fff;
+            cursor: pointer;
+        }
+        .tab-content {
+            display: none;
+        }
+        .active-tab {
+            display: block;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 75%;
+            padding: 10px;
+        }
+        button {
+            background: linear-gradient(to right, grey, black);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <div class="tabs">
+            <div class="tab" onclick="showTab('parent-tab')">Parent Login</div>
+            <div class="tab" onclick="showTab('doctor-tab')">Doctor Login</div>
+        </div>
+        <div id="parent-tab" class="tab-content">
+            <h2>Parent Login</h2>
+            <form action="parent_login.php" method="POST">
+                
+                <input type="email" id="parent_email" name="parent_email" placeholder="Parent Email" required>
+
+                
+                <input type="password" id="parent_password" name="parent_password" placeholder="Password" required>
+
+                <a href="Immunoshield.html"><button type="button">Login</button></a>
+            </form>
+        </div>
+        <div id="doctor-tab" class="tab-content">
+            <h2>Doctor Login</h2>
+            <form action="doctor_login.php" method="POST">
+                <div class="input-grp">
+                <input type="email" id="doctor_email" name="doctor_email" placeholder="Doctor's Email" required>
+
+                
+                <input type="password" id="doctor_password" name="doctor_password" placeholder="Password" required>
+            </div>
+
+                <a href="Immunoshield.html"><button type="button">Login</button></a>
+            </form>
+        </div>
+    </div>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+</html>

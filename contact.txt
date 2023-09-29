@@ -1,0 +1,8 @@
+<DOCTYPE html!>
+<head>
+<title>CONTACT</title>
+</head>
+<body bgcolor = "sky blue">
+<a href<img src = "F:\mini project resources\627baa008d659819b11084f7.png"</img></a>
+</body>
+</html>

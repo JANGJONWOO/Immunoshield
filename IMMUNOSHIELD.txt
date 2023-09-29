@@ -1,0 +1,105 @@
+<Doctype html!>
+<html>
+<head>
+<title>IMMUNOSHIELD</title>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size : 60px;
+  
+/* Centered text */
+.centered {
+ text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+  font-size: 50px;
+  line-height: 1.5;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}
+
+
+      .navbar {
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left : 0;
+        width: 100%;
+        z-index : 1;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #eeeeee;
+        text-align: center;
+        padding: 7px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        
+
+      }
+      .navbar a:hover {
+        color: #ffffff;
+      }
+ img{
+z-index : 2;
+overflow : hidden;
+}
+
+.section1{
+background-style : solid;
+background-color : grey;
+color : white;
+font-family : Cormorant;
+
+}
+
+.section2{
+background-style : solid;
+background-color : grey;
+color : white;
+font-family : Cormorant;
+
+
+
+a{
+color : white;
+}
+</style>
+</head>
+<body>
+<nav class = "navbar">
+<h4>
+<a href="https://www.google.com" target="_blank" width="200">VACCINES</a>
+
+<a href="https://www.google.com" target="_blank">SERVICES</a>
+
+<a href="https://www.google.com" target="_blank">CONTACT</a>
+<a href="www.file:///F:/mini%20project%20resources/BLOG.html" target="_blank">BLOG</a>
+<a href="https://www.google.com" target="_blank">CHATBOT</a>
+
+</h4>
+</nav>
+<h1>hello</h1>
+<div class="container">
+<img src = "F:\mini project resources\Poverty-Rates-of-Filipinos-1030x741.jpg" width = 100%>
+ 
+  <div class="centered">Join us in our mission to vaccinate each and every child in India</div>
+</div>
+<section class = "section1">
+<h1>What Are We ?</h1>
+<p>IMMUNOSHIELD is a non profitable website that aims in succesfull vaccination of all the children in INDIA.<br/>Our mission is simple:<br/> To provide you with accurate, up-to-date information about child vaccinations, their benefits, potential risks, and everything in between. We believe that by arming you with the knowledge you need, you can make well-informed choices that promote the health and safety of your child, your family, and your community.
+</section>
+
+<section class = "section2">
+<h1>Why are we ?</h1>
+<p>India has highest number of unvaccinated children in the world with 89 lakh children not receiving all vaccines and 17 lakh not getting vaccinated at all. All of this is due to non - awareness of vaccines and lacl of its imortance of immunisation  This is where we come in, IMMUNOSHIELD is a simple and easily accessible platform where parents can easily book vaccination appointments for their child and also get there myths cleared related to vaccines.</nav>
+
+
+
+</body>
+</head>
